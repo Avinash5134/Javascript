@@ -49,9 +49,49 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));//hasOwnProperty checks whether the passed key is present in the object or not.
+
+
+//*****************OBJECTS PART 3***********************
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh",
+}
+
+//Now to access any key from this course object we write it like:
+// course.courseInstructor
+//But to make our code more clean there is another way:
+
+//SYNTAX:This is called Object destructuring:
+// const {jise key ko find krna ha uska naam} = object ka naam
+
+//EXAMPLE:
+const {courseInstructor} = course
+console.log(courseInstructor);
+
+
+//#API:
+//-->API now comes in JSON type.
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+//API looks like the above written code where  both keys and values are written as strings.
+
+//Sometime API is also found in array form rather than object.
+//EX:
+// [
+//     {},
+//     {},
+//     {}
+// ]
 
